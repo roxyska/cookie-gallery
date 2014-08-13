@@ -1,0 +1,19 @@
+<h1>Vous êtes chez cookie</h1>
+
+<nav>
+	<ul>
+		<li data-view="images">images</li>
+		<li data-view="videos">videos</li>
+	</ul>
+</nav>
+<div id="images_container">
+	<% for(var i = 0; i < files.length ; i++) { %>
+    <img src="../images/<%= files[i] %>" alt="cookie">
+	<% } %>
+</div>
+
+<div id="videos_container" class="hidden">
+	<% for(var i = 0; i < files.length ; i++) { %>
+    <img src="../images/<%= files[i] %>" alt="cookie">
+	<% } %>
+</div>
